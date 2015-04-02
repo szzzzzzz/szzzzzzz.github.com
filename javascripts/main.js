@@ -1,1 +1,4 @@
-console.log('This would be the main JS file.');
+function sub(th) {
+localStorage.li=document.getElementById("li").value;
+console.log(localStorage.li);
+}
