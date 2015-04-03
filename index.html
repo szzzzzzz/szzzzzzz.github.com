@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html ng-app>
-  <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-  <script src="js/main.js"></script>
+<html ng-app="app">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/main.js"></script>
     <meta charset='utf-8' />
     <title>Szzzzzzz.github.com</title>
-  </head>
-  <body>
-  <form>
+</head>
+<body ng-controller="con">
 
-    {{localStorage.li}}
-    {{localStorage.s}}
-    <button type="button" id="but" onclick="localStorage.s+=1">去旅行</button>
+<form ng-show="!lh">
+    目的地:
+    <input id="li" type="text"  ng-model="li">
+    <button type="button" id="but" ng-click="sub()">去旅行</button>
 </form>
-<form>
-目的地:
-    <input id="li" type="text" />
-    <button type="button" id="but" onclick="sub(this.form)">去旅行</button>
-</form>
-  </body>
+<div ng-show="lh">
+<p>目的地:{{li}}  需要$:10000  尚欠:{{10000-ss}}
+<p>现有:{{ss}}
+<p> <button type="button"  ng-click="s(1)">工作</button>
+    <button type="button"  ng-click="s(5)">淘宝</button>
+    <button type="button"  ng-click="s(0)">QQ</button>
+    //<button type="button"  ng-click="d()">删除</button>
+<p><textarea cols="50" rows="20">
+{{txt}}
+    </textarea></div>
+</body>
 </html>
