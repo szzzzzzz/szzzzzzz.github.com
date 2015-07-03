@@ -15,9 +15,7 @@ angular.module('app', []).controller('con', function($scope) {
     $scope.d=function() {
         localStorage.clear();
     }
-    $scope.second=function() {
-            $scope.s(1);
-　 setTimeout("$scope.second( )", 1000);
-}
-$scope.second();
+
+　 setInterval("$scope.s(1)", 1000);
+
     })
