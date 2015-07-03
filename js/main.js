@@ -1,7 +1,7 @@
 angular.module('app', []).controller('con', function($scope) {
         $scope.li=localStorage.li || "";
         $scope.lh=localStorage.li
-        $scope.ss=localStorage.ss || 0;
+        $scope.ss=Number(localStorage.ss) || 0;
         $scope.txt=""
         $scope.sub=function() {
             localStorage.li=$scope.li
@@ -19,5 +19,5 @@ angular.module('app', []).controller('con', function($scope) {
             $scope.s(1);
 　 setTimeout("$scope.second( )", 1000);
 }
-$scope.second
+$scope.second();
     })
