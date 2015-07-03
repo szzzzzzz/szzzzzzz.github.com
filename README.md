@@ -1,3 +1,3 @@
-# szzzzzzz.github.com
+# szzzzzzz.github
 
-开始<szzzzzzz.github.io>
+开始<http://szzzzzzz.github.com>
