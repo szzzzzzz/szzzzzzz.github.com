@@ -14,8 +14,9 @@ angular.module('app', []).controller('con', function($scope) {
         }
     $scope.d=function() {
         localStorage.clear();
+        $scope.ss=Number(localStorage.ss) || 0;
     }
 
-　 setInterval("$scope.s(1)", 1000);
+　 setInterval("s(1)", 1000);
 
     })
