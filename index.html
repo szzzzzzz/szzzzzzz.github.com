@@ -4,24 +4,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="js/main.js"></script>
     <meta charset='utf-8' />
-    <title>Szzzzzzz.github.com</title>
+    <title>szzzzzzz.github.com</title>
 </head>
 <body ng-controller="con">
 
-<form ng-show="!lh">
-    目的地:
-    <input id="li" type="text"  ng-model="li">
-    <button type="button" id="but" ng-click="sub()">去旅行</button>
-</form>
-<div ng-show="lh">
- <!--<p>目的地:{{li}}  需要$:10000  尚欠:{{10000-ss}}-->
 <p>武器文明度:{{ss}}
-<p> <button type="button"  ng-click="s(1)">收集</button>
-    <button type="button"  ng-click="s(5)">转换</button>
-    <button type="button"  ng-click="s(0)">升级</button>
-    <button type="button"  ng-click="d()">删除</button>
-<p><textarea cols="50" rows="20">
+    <p>炼金石:{{a}}
+<p>武器:{{h1}}
+<p>下一级武器:{{h2}}
+<p>进化所需炼金石:{{h3}}
+<p>成就:无
+    <p> <button type="button"  ng-click="s(1)">收集</button>
+        <button type="button"  ng-click="t()">转换</button>
+        <button type="button"  ng-click="u()">升级</button>
+        <button type="button"  ng-click="d()">删除</button>
+    <p><textarea cols="50" rows="20">
 {{txt}}
-    </textarea></div>
+    </textarea>
 </body>
 </html>
